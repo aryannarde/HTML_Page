@@ -2,17 +2,84 @@
 
 <head>
   <title>Exclusive Car Showcase</title>
+  <style>
+    
+    #header {
+      background-color: black; 
+      color: white; 
+      text-align: center; 
+      padding: 20px; 
+    }
+
+    #about-section {
+      font-family: 'Arial, sans-serif'; 
+      line-height: 1.6; 
+    }
+
+    #models-section {
+      border: 2px solid #ff5722; 
+      border-radius: 10px; 
+      margin: 20px; 
+      text-align: center;
+    }
+
+   
+    .featured-models {
+      font-weight: bold; 
+      font-size: 1.2em; 
+      
+    }
+
+    .tips-box {
+      background: linear-gradient(to right, #ff9800, #ffc107); 
+      padding: 15px; 
+      color: #212121; 
+    }
+
+    .highlight {
+      border-left: 5px solid #4caf50; 
+      padding-left: 10px;
+    }
+
+    .img-container {
+      text-align: center; 
+    }
+
+    .fig-caption {
+      font-style: italic; 
+      color: #555;
+    }
+
+    
+    h1 {
+      font-size: 2em; 
+      text-transform: uppercase; 
+    }
+
+    h2 {
+      color: #673ab7;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: square; 
+    }
+
+    p {
+      margin-bottom: 15px; 
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Header Section -->
-  <header>
+  <header id="header">
     <h1>Discover Your Dream Car</h1>
     <nav>
       <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#models">Our Models</a></li>
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#models-section">Our Models</a></li>
         <li><a href="#contact">Get in Touch</a></li>
       </ul>
     </nav>
@@ -22,16 +89,16 @@
   <main>
 
     <!-- Section tag-->
-    <section id="about">
+    <section id="about-section">
       <h2>About Our Fleet</h2>
       <p>We specialize in offering cutting-edge cars that combine luxury, performance, and efficiency. Whether you're seeking a family vehicle or a stylish ride, we've got you covered.</p>
     </section>
 
     <!-- Article tag which shows the information about Car models -->
-    <article id="models">
+    <article id="models-section">
       <h2>Featured Car Models</h2>
       <p>Check out our latest lineup, packed with advanced features and superior craftsmanship:</p>
-      <ul>
+      <ul class="featured-models">
         <li>Model Xtreme - All-Electric SUV with extended range</li>
         <li>Model Sporty - Sleek and dynamic sports coupe</li>
         <li>EcoDrive Sedan - Smart hybrid technology for green driving</li>
@@ -39,25 +106,25 @@
     </article>
 
     <!-- Aside tag for additional information -->
-    <aside>
+    <aside class="tips-box">
       <h3>Essential Car Maintenance Tips</h3>
       <p>Keep your car in top shape by regularly checking oil levels, ensuring tire pressure is optimal, and scheduling timely service checks.</p>
     </aside>
 
-    <!--Figure tag use for showing image and figurecaption is use for giveing details about image -->
-    <figure>
+    <!-- Figure tag for image and caption -->
+    <figure class="img-container">
       <img src="Thar.jpg" alt="Mahindra Thar SUV" style="width: 500px; height: 300px;">
-      <figcaption>The Mahindra Thar 5-Door: Redefining Adventure with Style and Durability.</figcaption>
+      <figcaption class="fig-caption">The Mahindra Thar 5-Door: Redefining Adventure with Style and Durability.</figcaption>
     </figure>
 
-    <!-- mark tag is use for highlight the words -->
-    <p>Ready for an unforgettable ride? <mark>Schedule your test drive</mark> today and feel the excitement firsthand!</p>
+    <!-- Highlighting text -->
+    <p class="highlight">Ready for an unforgettable ride? <mark>Schedule your test drive</mark> today and feel the excitement firsthand!</p>
 
-    <!-- time tag is use for giving date  -->
+    <!-- Time tag -->
     <p>Join us at the <strong>Annual Car Fest</strong> on <time datetime="2024-12-15">December 15, 2024</time>. Experience exclusive previews and meet our experts.</p>
   </main>
 
-  <!-- footer is use for giving footer content such as copyright information -->
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Exclusive Car Showcase. Follow us on <a href="#social-media">Facebook</a>, <a href="#social-media">Twitter</a>, and <a href="#social-media">Instagram</a>.</p>
   </footer>
